@@ -16,7 +16,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    (r'^$', create_ipsum)
+    (r'^$', create_index),
+    (r'^ipsum$', create_ipsum),
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',

@@ -15,7 +15,6 @@
 		</div>
 		<div id="riker">
 			<p class="bubble" style="display:none"> 
-				{{ipsum}}
 		</p>
 		</div>
 		
@@ -24,7 +23,7 @@
 		$('#riker').click(function(){
 			$('.bubble').toggleClass("up")	
 			if( $('.bubble').is('.up')) {
-				$('.bubble').load('/', function() {$('.bubble').fadeIn("slow");})
+				$('.bubble').load('/ipsum', function() {$('.bubble').fadeIn("slow");})
 				
 			} else {
 				$('.bubble').fadeOut("slow");

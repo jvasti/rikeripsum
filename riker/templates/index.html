@@ -19,7 +19,8 @@
 		</div>
 		
 	<script>
-	$(document).ready(function() { 
+	$(document).ready(function() {
+		$('.bubble').removeAttr('riker');
 		$('#riker').click(function(){
 			$('.bubble').toggleClass("up")	
 			if( $('.bubble').is('.up')) {

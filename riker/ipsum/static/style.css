@@ -1,3 +1,12 @@
+@font-face {
+    font-family: fedfont;
+    src: local(gilligan_font), url('fedfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: fed;
+    src: local(gilligan_font), url('Federation.ttf') format('truetype');
+}
+
 body
 {
 	background-image: url('bg.jpg');
@@ -5,7 +14,7 @@ body
 #title
 {
 	text-align: center;
-	font-family:serif;
+	font-family:fedfont;
 	font-size: 60px;
 	font-style: bold;
 	margin-bottom: 30px;
@@ -27,6 +36,7 @@ body
 
 .bubble
 {
+font-family:fed;
 display:hide;
 left:20%;
 top:300px;

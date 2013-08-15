@@ -22,7 +22,14 @@
 	<script>
 	$(document).ready(function() { 
 		$('#riker').click(function(){
-			$('.bubble').fadeToggle("slow");
+			$('.bubble').toggleClass("up")	
+			if( $('.bubble').is('.up')) {
+				$('.bubble').fadeIn("slow");
+				$('.bubble').load('/')
+			} else {
+				$('.bubble').fadeOut("slow");
+			}
+
 		});
 	});
 	</script>

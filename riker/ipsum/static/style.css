@@ -25,7 +25,7 @@ body
 }
 
 
-.bubble 
+.bubble
 {
 display:hide;
 left:20%;
@@ -41,7 +41,7 @@ border: #7F7F7F solid 5px;
 border-radius: 36px;
 }
 
-.bubble:after 
+.bubble:after
 {
 content: "";
 position: absolute;
@@ -55,7 +55,7 @@ width: 0;
 z-index: 1;
 }
 
-.bubble:before 
+.bubble:before
 {
 content: "";
 position: absolute;

@@ -3,6 +3,8 @@ import os
 
 DIRNAME = os.path.dirname(__file__)
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -130,6 +132,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'ipsum'
+    'gunicorn'
 )
 
 # A sample logging configuration. The only tangible logging

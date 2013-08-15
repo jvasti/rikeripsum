@@ -1,0 +1,30 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<title>Riker Ipsum</title>
+			<link rel="stylesheet" href="{{STATIC_URL}}style.css" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+			<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		</head>
+		<body>
+		<div id="title">
+			Press Riker for Riker Ipsum!
+		</div>
+		<div id="riker">
+			<p class="bubble" style="display:none"> 
+				{{ipsum}}
+		</p>
+		</div>
+		
+	<script>
+	$(document).ready(function() { 
+		$('#riker').click(function(){
+			$('.bubble').fadeToggle("slow");
+		});
+	});
+	</script>
+	</body>
+	</html>

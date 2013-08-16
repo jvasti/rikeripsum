@@ -24,7 +24,7 @@
 		$('#riker').click(function(){
 			$('.bubble').toggleClass("up")	
 			if( $('.bubble').is('.up')) {
-				$('.bubble').load('/ipsum', function() {$('.bubble').fadeIn("slow");})
+				$('.bubble').load('/ipsum' + new Date().getTime(), function() {$('.bubble').fadeIn("slow");})
 				
 			} else {
 				$('.bubble').fadeOut("slow");

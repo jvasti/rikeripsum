@@ -1,10 +1,10 @@
 @font-face {
     font-family: fedfont;
-    src: local(gilligan_font), url('fedfont.ttf') format('truetype');
+    src: url('fedfont.ttf') format('truetype');
 }
 @font-face {
     font-family: fed;
-    src: local(gilligan_font), url('Federation.ttf') format('truetype');
+    src: url('Federation.ttf') format('truetype');
 }
 
 body
@@ -29,6 +29,8 @@ body
 	height: 400px;
 	background-size: 100% 100%;
 	background-image: url('riker.png');
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	z-index: 0;
 }
@@ -37,6 +39,7 @@ body
 .bubble
 {
 font-family:fed;
+font-size: 14px;
 display:hide;
 left:20%;
 top:300px;

@@ -14,15 +14,15 @@
 			Press Riker for Riker Ipsum!
 		</div>
 		<div id="riker">
-			<p class="bubble" style="display:none"> 
-		</p>
+					<p class="bubble" style="display:none"> </p>
+
 		</div>
-		
 	<script>
 	$(document).ready(function() {
-		$('.bubble').removeAttr('riker');
-		$('#riker').click(function(){
-			$('.bubble').toggleClass("up")	
+
+		$('#riker').click(function(event){
+			event.stopPropagation();
+			$('.bubble').toggleClass("up");	
 			if( $('.bubble').is('.up')) {
 				$('.bubble').load('/ipsum' + new Date().getTime(), function() {$('.bubble').fadeIn("slow");})
 				
@@ -30,6 +30,9 @@
 				$('.bubble').fadeOut("slow");
 			}
 
+		});
+		$('.bubble').click(function()  {
+		 	return false;
 		});
 	});
 	</script>
